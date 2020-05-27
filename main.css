@@ -2,6 +2,11 @@ body {
   font-family: sans-serif;
 }
 
+#title,
+#description {
+  text-align: center;
+}
+
 #survey-form {
   max-width: 500px;
   margin: 20px auto;
@@ -15,7 +20,8 @@ label {
   text-transform: uppercase;
 }
 
-input, select {
+input,
+select {
   display: block;
   width: 100%;
   box-sizing: border-box;
