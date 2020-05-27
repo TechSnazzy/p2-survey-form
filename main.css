@@ -1,3 +1,20 @@
 body {
   font-family: sans-serif;
 }
+
+#survey-form {
+  max-width: 500px;
+  margin: 20px auto;
+  border: 2px solid purple;
+  padding: 20px;
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
