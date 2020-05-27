@@ -11,10 +11,13 @@ body {
 
 label {
   display: block;
+  padding: 10px 0;
+  text-transform: uppercase;
 }
 
-input {
+input, select {
   display: block;
   width: 100%;
   box-sizing: border-box;
+  font-size: 20px;
 }
