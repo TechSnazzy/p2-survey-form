@@ -53,7 +53,8 @@ input[type='number'] {
   text-align: center;
 }
 
-#submit {
+#submit,
+#reset {
   background: mediumturquoise;
   border: none;
   color: white;
@@ -65,6 +66,7 @@ input[type='number'] {
   font-size: 16px;
 }
 
-#submit:hover {
+#submit:hover,
+#reset:hover {
   background: lightblue;
 }
