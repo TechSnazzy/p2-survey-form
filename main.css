@@ -45,3 +45,26 @@ input[type='number'] {
 ::placeholder {
   color: red;
 }
+
+#grid-submit {
+  border: 2px solid purple;
+  padding: 20px 50px;
+  margin: 10px;
+  text-align: center;
+}
+
+#submit {
+  background: mediumturquoise;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#submit:hover {
+  background: lightblue;
+}
