@@ -8,90 +8,53 @@
   </head>
 
   <body>
+    <!-- TITLE -->
+    <h1 id="title">TechSnazzy Survey Form</h1>
+
+    <!-- DESCRIPTION -->
+    <p id="description">Thanks for taking the time to fill out this form.</p>
+
+    <!-- FORM -->
     <form id="survey-form">
-      <div id="grid-container">
-        <div id="grid-header">
-          <h1 id="title">TechSnazzy Survey Form</h1>
-          <p id="description">
-            Thank you for taking the time to fill out this survey form.
-          </p>
-        </div>
+      <!-- NAME TEXT INPUT -->
+      <label for="name" id="name-label">
+        <p>Name</p>
+      </label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Your name (required)"
+        required
+      />
 
-        <div id="grid-inputs">
-          <label for="name" id="name-label">
-            Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            placeholder="Your name (required)"
-            required
-          />
+      <!-- EMAIL TEXT INPUT -->
+      <label for="email" id="email-label">
+        <p>Email</p>
+      </label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Your email (required)"
+        required
+      />
 
-          <label for="email" id="email-label">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Your email (required)"
-            required
-          />
+      <!-- AGE NUMBER INPUT -->
+      <label for="number" id="number-label">
+        <p>Age</p>
+      </label>
+      <input
+        type="number"
+        id="number"
+        min="18"
+        max="65"
+        placeholder="Your age (optional)"
+      />
 
-          <label for="number" id="number-label">
-            Age
-          </label>
-          <input
-            type="number"
-            id="number"
-            min="18"
-            max="65"
-            placeholder="Your age (optional)"
-          />
-        </div>
-
-        <div id="grid-dropdown">
-          <label for="dropdown">
-            How would you rate your Front-End Web Developer skills?
-          </label>
-          <select id="dropdown">
-            <option value="great">Great</option>
-            <option value="good">Good</option>
-            <option value="poor">Poor</option>
-          </select>
-        </div>
-
-        <div id="grid-radio-buttons">
-          <div class="rad-buttons" id="radio-zero">
-            <label>Who is the greatest QB of all time?</label>
-          </div>
-          <div class="rad-buttons" id="radio-one">
-            <input type="radio" id="radio-montana" name="radio-buttons" value="montana" checked />
-            <label for="radio-montana">
-              Joe Montana
-            </label>
-          </div>
-
-          <div class="rad-buttons" id="radio-two">
-            <input type="radio" id="radio-brady" name="radio-buttons" value="brady" />
-            <label for="radio-brady">
-              Tom Brady
-            </label>
-          </div>
-
-          <div class="rad-buttons" id="radio-three">
-            <input type="radio" id="radio-grbac" name="radio-buttons" value="grbac" />
-            <label for="radio-grbac">
-              Elvis Grbac
-            </label>
-          </div>
-        </div>
-
-        <div id="grid-submit">
-          <button type="submit" id="submit">Submit</button>
-          <button type="reset" id="reset">Reset</button>
-        </div>
-      </div>
+      <!-- DROPDOWN MENU -->
+      <select id="dropdown">
+        <option value="montana">Joe Montana</option>
+        <option value="brady">Tom Brady</option>
+      </select>
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
