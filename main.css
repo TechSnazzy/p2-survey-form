@@ -4,10 +4,11 @@ body {
 
 #container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   background: cornsilk;
-  width: 800px;
+  border: 2px solid hotpink;
   margin: 0 auto;
+  width: 500px;
 }
 
 #grid-header {
@@ -22,10 +23,10 @@ body {
 }
 
 #survey-form {
-  max-width: 500px;
   margin: 20px auto;
   border: 2px solid purple;
   padding: 20px;
+  width: 500px;
 }
 
 label {
