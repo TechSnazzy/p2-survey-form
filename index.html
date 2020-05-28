@@ -8,11 +8,40 @@
   </head>
 
   <body>
-    <form>
+    <form id="survey-form">
       <div id="grid-container">
         <div id="grid-header">
           <h1>TechSnazzy Survey Form</h1>
           <p>Thank you for taking the time to fill out this survey form.</p>
+        </div>
+        <div id="grid-inputs">
+          <label for="name" id="name-label">
+            Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Your name (required)"
+            required
+          />
+
+          <label for="email" id="email-label">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Your email (required)"
+            required
+          />
+
+          <label for="number" id="number-label">
+            Age
+          </label>
+          <input type="number" id="number" placeholder="Your age (optional)" />
+        </div>
+        <div id="grid-submit">
+          <input type="submit" value="Send" id="send-button" />
         </div>
       </div>
     </form>

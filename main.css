@@ -16,3 +16,32 @@ body {
   padding: 10px;
   text-align: center;
 }
+
+#grid-inputs {
+  border: 2px solid purple;
+  padding: 20px 50px;
+  margin: 10px;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'] {
+  display: block;
+  width: 100%;
+  background-color: mediumturquoise;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: red;
+}
