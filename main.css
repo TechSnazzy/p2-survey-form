@@ -15,35 +15,19 @@ body {
 }
 
 label {
+  background: orange;
   display: block;
-  padding: 10px 0;
+  padding: 10px;
+  margin: 0;
   text-transform: uppercase;
 }
 
-#name,
-#email,
-#number,
-#dropdown {
+input,
+select {
   display: block;
   width: 100%;
   box-sizing: border-box;
   font-size: 18px;
   padding: 5px;
-}
-
-#radio-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-}
-
-.radio-box {
-  text-align: center;
-  padding: 20px;
-  margin: 5px 0;
-}
-
-.radio-box:hover {
-  background: green;
+  margin: 0;
 }
