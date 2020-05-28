@@ -20,11 +20,30 @@ label {
   text-transform: uppercase;
 }
 
-input,
-select {
+#name,
+#email,
+#number,
+#dropdown {
   display: block;
   width: 100%;
   box-sizing: border-box;
   font-size: 18px;
   padding: 5px;
+}
+
+#radio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-box {
+  text-align: center;
+  padding: 20px;
+  margin: 5px 0;
+}
+
+.radio-box:hover {
+  background: green;
 }

@@ -53,26 +53,34 @@
         <option value="poor">Not good at all</option>
       </select>
 
-      <label for="montana">
-        Joe Montana
-      </label>
-      <input
-        type="radio"
-        id="montana"
-        name="goat"
-        value="Joe Montana"
-        checked
-      />
+      <div id="radio-container">
+        <div class="radio-box" id="box1">
+          <label for="montana">
+            Joe Montana
+          </label>
+          <input
+            type="radio"
+            id="montana"
+            name="goat"
+            value="Joe Montana"
+            checked
+          />
+        </div>
 
-      <label for="brady">
-        Tom Brady
-      </label>
-      <input type="radio" id="brady" name="goat" value="Tom Brady" />
+        <div class="radio-box" id="box2">
+          <label for="brady">
+            Tom Brady
+          </label>
+          <input type="radio" id="brady" name="goat" value="Tom Brady" />
+        </div>
 
-      <label for="grbac">
-        Elvis Grbac
-      </label>
-      <input type="radio" id="grbac" name="goat" value="Elvis Grbac" />
+        <div class="radio-box" id="box3">
+          <label for="grbac">
+            Elvis Grbac
+          </label>
+          <input type="radio" id="grbac" name="goat" value="Elvis Grbac" />
+        </div>
+      </div>
 
       <input type="submit" value="Submit" id="#submit" />
     </form>
