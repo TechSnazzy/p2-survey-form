@@ -6,56 +6,68 @@
     <link rel="stylesheet" href="main.css" />
     <title>Survey Form</title>
   </head>
+
   <body>
-    <form id="survey-form">
-      <h1 id="title">TechSnazzy Survey Form</h1>
-      <p id="description">
-        Thank you for taking the time to stop by and fill out this form.
-      </p>
-
-      <label for="name" id="name-label">
-        Name
-      </label>
-      <input
-        type="text"
-        id="name"
-        placeholder="Your name (required)"
-        required
-      />
-
-      <label for="email" id="email-label">
-        Email
-      </label>
-      <input
-        type="email"
-        id="email"
-        placeholder="Your email (required)"
-        required
-      />
-
-      <label for="number" id="number-label">
-        Age
-      </label>
-      <input
-        type="number"
-        id="number"
-        placeholder="Your age (optional)"
-        min="18"
-        max="65"
-      />
-
-      <label for="dropdown" id="dropdown-label">
-        What do you think of this form?
-      </label>
-      <select id="dropdown">
-        <option value="great">It's really great</option>
-        <option value="good">It's pretty good</option>
-        <option value="poor">Not good at all</option>
-      </select>
-
-      <input type="submit" value="Submit" id="#submit" />
-    </form>
-
+    <div id="container">
+      <form id="survey-form">
+        <div id="grid-header">
+          <h1 id="title">TechSnazzy Survey Form</h1>
+          <p id="description">
+            Thank you for taking the time to stop by and fill out this form.
+          </p>
+        </div>
+        <div id="grid-name">
+          <label for="name" id="name-label">
+            Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Your name (required)"
+            required
+          />
+        </div>
+        <div id="grid-email">
+          <label for="email" id="email-label">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Your email (required)"
+            required
+          />
+        </div>
+        <div id="grid-number">
+          <label for="number" id="number-label">
+            Age
+          </label>
+          <input
+            type="number"
+            id="number"
+            placeholder="Your age (optional)"
+            min="18"
+            max="65"
+          />
+        </div>
+        <div id="grid-dropdown">
+          <label for="dropdown" id="dropdown-label">
+            What do you think of this form?
+          </label>
+          <select id="dropdown">
+            <option value="great">It's really great</option>
+            <option value="good">It's pretty good</option>
+            <option value="poor">Not good at all</option>
+          </select>
+        </div>
+        <div id="grid-radio-buttons">Radio Buttons</div>
+        <div id="grid-checkboxes">Checkboxes</div>
+        <div id="grid-textarea">Comments</div>
+        <div id="submit-button">
+          <input type="submit" value="Submit" id="#submit" />
+        </div>
+      </form>
+    </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
