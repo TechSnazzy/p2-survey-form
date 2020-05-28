@@ -2,48 +2,17 @@ body {
   font-family: sans-serif;
 }
 
-#container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+#grid-container {
   background: cornsilk;
-  border: 2px solid hotpink;
+  width: 800px;
   margin: 0 auto;
-  width: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 #grid-header {
   background: tomato;
   color: white;
   padding: 10px;
-}
-
-#title,
-#description {
   text-align: center;
 }
-
-#survey-form {
-  margin: 20px auto;
-  border: 2px solid purple;
-  padding: 20px;
-  width: 500px;
-}
-
-label {
-  background: orange;
-  display: block;
-  padding: 10px;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-input,
-select {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  font-size: 18px;
-  padding: 5px;
-  margin: 0;
-}
-
