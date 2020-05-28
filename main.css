@@ -3,7 +3,7 @@ body {
 }
 
 #grid-container {
-  background: cornsilk;
+  /* background: cornsilk; */
   width: 800px;
   margin: 0 auto;
   display: grid;
@@ -17,7 +17,10 @@ body {
   text-align: center;
 }
 
-#grid-inputs {
+#grid-inputs,
+#grid-dropdown,
+#grid-radio-buttons {
+  background: cornsilk;
   border: 2px solid purple;
   padding: 20px 50px;
   margin: 10px;
@@ -31,7 +34,8 @@ label {
 
 input[type='text'],
 input[type='email'],
-input[type='number'] {
+input[type='number'],
+select {
   display: block;
   width: 100%;
   background-color: mediumturquoise;
@@ -43,14 +47,46 @@ input[type='number'] {
 }
 
 ::placeholder {
-  color: red;
+  color: cornsilk;
+}
+
+#grid-radio-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#radio-zero {
+  grid-column: 1 / 4;
+  margin: 0 0 10px;
+  text-align: left;
+}
+
+#grid-radio-buttons label {
+  display: inline;
+}
+
+.rad-buttons {
+  background: pink;
+}
+
+.rad-buttons:hover {
+  background: red;
+}
+
+#grid-radio-buttons input[type='radio'] {
+  display: inline;
 }
 
 #grid-submit {
-  border: 2px solid purple;
-  padding: 20px 50px;
+  /* background: cornsilk;
+  border: 2px solid purple; */
   margin: 10px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #submit,
@@ -63,7 +99,8 @@ input[type='number'] {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
+  width: 200px;
 }
 
 #submit:hover,

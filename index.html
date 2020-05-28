@@ -16,6 +16,7 @@
             Thank you for taking the time to fill out this survey form.
           </p>
         </div>
+
         <div id="grid-inputs">
           <label for="name" id="name-label">
             Name
@@ -48,6 +49,44 @@
             placeholder="Your age (optional)"
           />
         </div>
+
+        <div id="grid-dropdown">
+          <label for="dropdown">
+            How would you rate your Front-End Web Developer skills?
+          </label>
+          <select id="dropdown">
+            <option value="great">Great</option>
+            <option value="good">Good</option>
+            <option value="poor">Poor</option>
+          </select>
+        </div>
+
+        <div id="grid-radio-buttons">
+          <div class="rad-buttons" id="radio-zero">
+            <label>Who is the greatest QB of all time?</label>
+          </div>
+          <div class="rad-buttons" id="radio-one">
+            <input type="radio" id="radio-montana" name="radio-buttons" value="montana" checked />
+            <label for="radio-montana">
+              Joe Montana
+            </label>
+          </div>
+
+          <div class="rad-buttons" id="radio-two">
+            <input type="radio" id="radio-brady" name="radio-buttons" value="brady" />
+            <label for="radio-brady">
+              Tom Brady
+            </label>
+          </div>
+
+          <div class="rad-buttons" id="radio-three">
+            <input type="radio" id="radio-grbac" name="radio-buttons" value="grbac" />
+            <label for="radio-grbac">
+              Elvis Grbac
+            </label>
+          </div>
+        </div>
+
         <div id="grid-submit">
           <button type="submit" id="submit">Submit</button>
           <button type="reset" id="reset">Reset</button>
