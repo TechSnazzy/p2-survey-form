@@ -64,17 +64,30 @@
         <label id="checkbox-label">
           <p>Who are your favorite all time greatest players?</p>
         </label>
-        <input type="checkbox" id="player-one" name="players" value="Jerry Rice" checked>Jerry Rice</input><br>
-        <input type="checkbox" id="player-two" name="players" value="John Taylor" checked>John Taylor</input><br>
-        <input type="checkbox" id="player-three" name="players" value="Roger Craig" checked>Roger Craig</input><br>
-        <input type="checkbox" id="player-four" name="players" value="Freddie Solomon" checked>Freddie Solomon</input><br>
-        <input type="checkbox" id="player-five" name="players" value="Tom Brady">Tom Brady</input><br>
+        <div id="checkbox-buttons">
+          <div class="checkbox-box" id="cb1">
+            <input type="checkbox" id="player-one" name="players" value="Jerry Rice" checked>Jerry Rice</input>
+          </div>
+          <div class="checkbox-box" id="cb2">
+            <input type="checkbox" id="player-two" name="players" value="John Taylor" checked>John Taylor</input>
+          </div>
+          <div class="checkbox-box" id="cb3">
+            <input type="checkbox" id="player-three" name="players" value="Roger Craig" checked>Roger Craig</input>
+          </div>
+          <div class="checkbox-box" id="cb4">
+            <input type="checkbox" id="player-four" name="players" value="Freddie Solomon" checked>Freddie Solomon</input>
+          </div>
+          <div class="checkbox-box" id="cb5">
+            <input type="checkbox" id="player-five" name="players" value="Tom Brady">Tom Brady</input>
+          </div>
+        </div>
       
         <!-- COMMENTS -->
         <textarea id="comment" cols="40" rows="4">Add your additional comments here</textarea><br>
       
         <!-- SUBMIT BUTTON -->
-        <input type="submit" id="submit" value="Submit">
+        <!-- <input type="submit" id="submit" value="Submit"> -->
+        <button id="submit" value="Submit">Submit</button>
       
       </form>
     </div>

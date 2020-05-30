@@ -47,14 +47,19 @@ label {
   font-size: 24px;
 }
 
-#radio-buttons {
+#radio-buttons,
+#checkbox-buttons {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: repeat(auto-fill, 1fr);
   justify-content: center;
   align-items: center;
 }
 
-.radio-box {
+.radio-box,
+.checkbox-box {
   background: tomato;
   color: white;
   padding: 10px;
@@ -64,7 +69,8 @@ label {
   border-radius: 10px;
 }
 
-.radio-box:hover {
+.radio-box:hover,
+.checkbox-box:hover {
   background: orange;
 }
 
@@ -87,6 +93,7 @@ textarea:focus {
   margin-top: 3%;
   color: white;
   background: green;
+  text-transform: uppercase;
 }
 
 @media (max-width: 800px) {
