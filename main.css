@@ -1,4 +1,99 @@
 body {
   font-family: sans-serif;
+  background: cornsilk;
+}
+
+#title {
+  font-size: 45px;
+}
+
+#description {
+  font-size: 32px;
+}
+
+#body {
+  background: mediumturquoise;
+  border-radius: 10px;
+  width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
   text-align: center;
+}
+
+label {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 24px;
+}
+
+::placeholder {
+  color: white;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#comment {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  box-sizing: border-box;
+  background: tomato;
+  color: white;
+  font-size: 24px;
+}
+
+#radio-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-box {
+  background: tomato;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.radio-box:hover {
+  background: orange;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+#submit {
+  width: 200px;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 3%;
+  color: white;
+  background: green;
+}
+
+@media (max-width: 800px) {
+  #body {
+    width: 80%;
+  }
+  #radio-buttons {
+    grid-template-columns: 1fr 1fr;
+  }
 }

@@ -8,76 +8,76 @@
   </head>
 
   <body>
-    <!-- TITLE -->
-    <h1 id="title">TechSnazzy Survey Form</h1>
+    <div id="body">
+      <!-- TITLE -->
+      <h1 id="title">TechSnazzy Survey Form</h1>
+      
+      <!-- DESCRIPTION -->
+      <p id="description">Thanks for taking the time to fill out this form.</p>
 
-    <!-- DESCRIPTION -->
-    <p id="description">Thanks for taking the time to fill out this form.</p>
-
-    <!-- FORM -->
-    <form id="survey-form">
-      <!-- NAME TEXT INPUT -->
-      <label for="name" id="name-label">
-        <p>Name</p>
-      </label>
-      <input
-        type="text"
-        id="name"
-        placeholder="Your name (required)"
-        required
-      />
-
-      <!-- EMAIL TEXT INPUT -->
-      <label for="email" id="email-label">
-        <p>Email</p>
-      </label>
-      <input
-        type="email"
-        id="email"
-        placeholder="Your email (required)"
-        required
-      />
-
-      <!-- AGE NUMBER INPUT -->
-      <label for="number" id="number-label">
-        <p>Age</p>
-      </label>
-      <input
-        type="number"
-        id="number"
-        min="18"
-        max="65"
-        placeholder="Your age (optional)"
-      />
-
-      <!-- DROPDOWN MENU -->
-      <p>Greatest quarterback of all time?</p>
-      <select id="dropdown">
-        <option value="Joe Montana" checked>Joe Montana</option>
-        <option value="Tom Brady">Tom Brady</option>
-      </select>
-
-      <!-- RADIO BUTTONS -->
-      <p>Greatest NFL football team of all time?</p>
-      <input type="radio" id="49ers" name="teams" value="49ers" checked>San Francisco 49ers</input><br>
-      <input type="radio" id="patriots" name="teams" value="patriots">New England Patriots</input><br>
-      <input type="radio" id="cowboys" name="teams" value="cowboys">Dallas Cowboys</input><br>
-
-      <!-- CHECKBOXES -->
-      <p>Who are your favorite all time greatest players?</p>
-      <input type="checkbox" id="player-one" name="players" value="Jerry Rice" checked>Jerry Rice</input><br>
-      <input type="checkbox" id="player-two" name="players" value="John Taylor" checked>John Taylor</input><br>
-      <input type="checkbox" id="player-three" name="players" value="Roger Craig" checked>Roger Craig</input><br>
-      <input type="checkbox" id="player-four" name="players" value="Freddie Solomon" checked>Freddie Solomon</input><br>
-      <input type="checkbox" id="player-five" name="players" value="Tom Brady">Tom Brady</input><br>
-
-      <!-- COMMENTS -->
-      <textarea id="comment" cols="40" rows="4">Add your additional comments here</textarea>
-
-      <!-- SUBMIT BUTTON -->
-      <input type="submit" id="submit" value="Submit">
-
-    </form>
+      <!-- FORM -->
+      <form id="survey-form">
+        <!-- NAME TEXT INPUT -->
+        <label for="name" id="name-label">
+          <p>Name</p>
+        </label>
+        <input type="text" id="name" placeholder="Your name (required)" required />
+      
+        <!-- EMAIL TEXT INPUT -->
+        <label for="email" id="email-label">
+          <p>Email</p>
+        </label>
+        <input type="email" id="email" placeholder="Your email (required)" required />
+      
+        <!-- AGE NUMBER INPUT -->
+        <label for="number" id="number-label">
+          <p>Age</p>
+        </label>
+        <input type="number" id="number" min="18" max="65" placeholder="Your age (optional)" />
+      
+        <!-- DROPDOWN MENU -->
+        <label id="dropdown-label">
+          <p>Greatest quarterback of all time?</p>
+        </label>
+        <select id="dropdown">
+          <option value="Joe Montana" checked>Joe Montana</option>
+          <option value="Tom Brady">Tom Brady</option>
+        </select>
+      
+        <!-- RADIO BUTTONS -->
+        <label id="radio-button-label">
+          <p>Greatest NFL football team of all time?</p>
+        </label>
+        <div id="radio-buttons">
+          <div class="radio-box" id="box1">
+            <input type="radio" id="fortyniners" name="teams" value="49ers" checked>San Francisco 49ers</input>
+          </div>
+          <div class="radio-box" id="box2">
+            <input class="radio-buttons" type="radio" id="patriots" name="teams" value="patriots">New England Patriots</input>
+          </div>
+          <div class="radio-box" id="box3">
+            <input class="radio-buttons" type="radio" id="cowboys" name="teams" value="cowboys">Dallas Cowboys</input><br>
+          </div>
+        </div>
+      
+        <!-- CHECKBOXES -->
+        <label id="checkbox-label">
+          <p>Who are your favorite all time greatest players?</p>
+        </label>
+        <input type="checkbox" id="player-one" name="players" value="Jerry Rice" checked>Jerry Rice</input><br>
+        <input type="checkbox" id="player-two" name="players" value="John Taylor" checked>John Taylor</input><br>
+        <input type="checkbox" id="player-three" name="players" value="Roger Craig" checked>Roger Craig</input><br>
+        <input type="checkbox" id="player-four" name="players" value="Freddie Solomon" checked>Freddie Solomon</input><br>
+        <input type="checkbox" id="player-five" name="players" value="Tom Brady">Tom Brady</input><br>
+      
+        <!-- COMMENTS -->
+        <textarea id="comment" cols="40" rows="4">Add your additional comments here</textarea><br>
+      
+        <!-- SUBMIT BUTTON -->
+        <input type="submit" id="submit" value="Submit">
+      
+      </form>
+    </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
